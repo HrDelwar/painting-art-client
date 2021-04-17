@@ -1,38 +1,199 @@
-.App {
+.MuiPaper-root, .bg-custom {
+  background: linear-gradient(45deg, #2b7fca, #a32cd9) !important;
+  color: #fff;
+}
+
+a {
+  color: #fff !important;
+}
+
+.selected {
+  margin: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: rgb(6, 228, 251) !important;
+  text-decoration: underline;
+}
+
+.lined {
+  display: inline-table;
+  width: 100%;
+  position: relative;
+}
+
+.lined::after {
+  content: '';
+  display: table-cell;
+  width: 130px;
+  position: absolute;
+  height: 5px;
+  top: 80px !important;
+  left: 50%;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  transform: translateX(-50%);
+}
+
+.text-brand {
+  color: #9801ff
+}
+
+.z-03, .z-04, .z-05, .z-75, .z-100, .-z-01, .-z-03, .-z-master {
+  position: relative;
+}
+
+.-z-01 {
+  z-index: -1 !important;
+}
+
+.-z-03 {
+  z-index: -30 !important;
+}
+
+.-z-01 {
+  z-index: -1 !important;
+}
+
+.z-03 {
+  z-index: 30 !important;
+}
+
+.z-05 {
+  z-index: 50 !important;
+}
+
+.z-75 {
+  z-index: 70 !important;
+}
+
+.z-100 {
+  z-index: 100 !important;
+}
+
+.z-master {
+  z-index: 9999 !important;
+}
+
+.-z-master {
+  z-index: -9999 !important;
+}
+
+.btn-custom {
+  padding: 0px 20px;
+  display: inline-block;
   text-align: center;
+  font-weight: 500;
+  color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  min-width: 150px;
+  border: 0px solid #e1e1e1;
+  border-radius: 50px;
+  transition: all 0.3s;
+  background: linear-gradient(45deg, #2b7fca, #a32cd9) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-custom:hover {
+  border: 0px solid #e1e1e1;
+  color: #ffffff;
+  box-shadow: 0px 5px 40px -15px #000000;
+  transition: all 0.3s;
+  background: linear-gradient(to left, #29ffc6, #20e3b2, #0cebeb);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+footer {
+  background-color: #131313;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+.icon {
+  padding: 12px 19px;
+  font-size: 1.5rem;
+}
+
+.fa-facebook {
+  padding: 12px 24px;
+}
+
+.icon:hover {
+  animation: tada 1s;
+}
+
+.btn-scroll-up:hover .btn-scroll-icon-up {
+  animation: up 1s;
+}
+
+.tada:hover {
+  animation: tada 1s;
+}
+
+.btn-scroll-up {
+  padding: 10px 15px;
+  bottom: 20px;
+  right: 20px;
+  border: 0;
+  position: fixed;
+}
+.card:hover .service-img{
+  animation: scale 1s;
+}
+.scale:hover {
+  animation: scale 1s;
+}
+
+@keyframes up {
+  20% {
+    transform: translateY(-5px);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes tada {
   from {
-    transform: rotate(0deg);
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes scale {
+  20% {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+  40% {
+    transform: scale3d(.8, .8, .8);
+  }
+  60% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  80% {
+    transform: scale3d(.9, .9, .9);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }

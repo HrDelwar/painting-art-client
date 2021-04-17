@@ -1,0 +1,7 @@
+.dropdown-menu-custom{
+    left:-100% !important;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+	color: #eaeff5;
+	background-color: #333638;
+}

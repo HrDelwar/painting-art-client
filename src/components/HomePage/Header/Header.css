@@ -1,0 +1,24 @@
+.home-header {
+    min-height: 850px;
+    background: url(../../../images/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.home-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #00000061;
+    left: 0;
+    right: 0;
+}
+
+.explore:hover .explore-icon {
+    margin-left: 1rem !important;
+}
+.explore-icon{
+    margin-left: .5rem !important;
+    transition: .3s;
+}
