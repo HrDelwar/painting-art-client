@@ -15,23 +15,12 @@ const Review = () => {
 
 
     return (
-        <section id="services" className=" pt-5 pb-2 text-center">
+        <section id="review" className=" pt-5 pb-2 text-center">
             <h5 className="text-primary text-uppercase pt-5">review</h5>
             <h2 className="lined text-brand text-center mb-5 pb-2">What Our Client Say</h2>
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                    {/* <div className="carousel-item active">
-                        <h5>item1</h5>
-                        <img src="..." className="d-block w-100" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                        <h5>item2</h5>
-                        <img src="..." className="d-block w-100" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                        <h5>item3</h5>
-                        <img src="..." className="d-block w-100" alt="..." />
-                    </div> */}
+                  
                     {
                         reviews.map((review, index) => <ReviewItem index={index} key={review._id} item={review} />)
                     }
