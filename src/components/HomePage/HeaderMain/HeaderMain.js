@@ -19,7 +19,7 @@ const HeaderMain = () => {
                     <div className="">
                         <h1>We Deliver Best Paintings</h1>
                         <p>Are you ready to show your art in galleries? Learn what it takes in an online, on-demand workshop from Xanadu Gallery owner and Reddotblog publisher Jason Horejs.</p>
-                        <button className="btn-custom text-uppercase explore">Explore more <FontAwesomeIcon className="explore-icon" icon={faArrowRight} /> </button>
+                        <a href="#services"><button className="btn-custom text-uppercase explore">Explore more <FontAwesomeIcon className="explore-icon" icon={faArrowRight} /> </button></a>
                     </div>
                 </div>
             </div>
