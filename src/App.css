@@ -137,11 +137,24 @@ footer {
   border: 0;
   position: fixed;
 }
-.card:hover .service-img{
+
+.card:hover .service-img {
   animation: scale 1s;
 }
+
 .scale:hover {
   animation: scale 1s;
+}
+
+.star-icon-enabled, .star-icon-disabled {
+  font-size: 22px;
+}
+
+.star-icon-enabled {
+  color: #edae10;
+}
+.star-icon-disabled {
+  color: #a09a8c;
 }
 
 @keyframes up {

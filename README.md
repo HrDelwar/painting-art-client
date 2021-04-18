@@ -13,6 +13,7 @@
   * see all order
   * approve order
 * google login
+* review ratting
   
 
 ## Backend use
