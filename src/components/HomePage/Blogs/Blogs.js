@@ -35,7 +35,9 @@ const Blogs = () => {
                     blogs.map(blog => (
                         <div key={blog.name} className="col-md-4 d-flex justify-content-center mb-3">
                             <div className="card text-start" style={{ maxWidth: "18rem" }}>
-                                <img className="card-img-top tada" src={blog.image} alt={blog.name} />
+                                <div className="overflow-hidden" style={{ maxWidth: "18rem", maxHeight: "18rem" }}>
+                                    <img className="card-img-top tada" src={blog.image} alt={blog.name} />
+                                </div>
                                 <div className="card-body">
                                     <h5 className="card-title text-capitalize">{blog.name}</h5>
                                     <small>{moment(blog.created).format('DD MMMM yyyy')}</small>

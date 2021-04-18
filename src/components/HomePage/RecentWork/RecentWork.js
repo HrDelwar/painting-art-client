@@ -29,8 +29,9 @@ const RecentWork = () => {
                     recentWorks.map(recentWork => (
                         <div key={recentWork.name} className="col-md-4 d-flex justify-content-center mb-3">
                             <div className="card" style={{ maxWidth: "18rem" }}>
-
-                                <img className="card-img-top scale" src={recentWork.image} alt={recentWork.name} />
+                                <div className="overflow-hidden" style={{ maxWidth: "18rem", maxHeight: "18rem" }}>
+                                    <img className="card-img-top scale" src={recentWork.image} alt={recentWork.name} />
+                                </div>
                                 <div className="card-body">
                                     <h5 className="card-title text-capitalize">{recentWork.name}</h5>
                                 </div>
