@@ -1,5 +1,8 @@
 # Painting Art Client [Live Site](https://hr-painting-art.netlify.app/)
 
+## Implement  By
+React, React-router, React-hook-form, react-google-map, Node.js,  Express.js, Firebase, MaterialUI, MongoDB.
+
 ## Features
 
 * user
@@ -31,4 +34,4 @@
 * heroku server
 * firebase login
 
-### Develope by [HrDelwar](https://www.linkedin.com/in/hr-delwar-825586203/)
+### Develope by [HrDelwar](https://www.linkedin.com/in/HrDelwar/)
