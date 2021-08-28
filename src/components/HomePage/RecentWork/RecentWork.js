@@ -21,7 +21,7 @@ const recentWorks = [
 const RecentWork = () => {
 
     return (
-        <section id="recent-works" className="container pt-5 pb-2 text-center">
+        <section id="recent-works" className="container pt-4 text-center">
             <h5 className="text-primary text-uppercase pt-5">recent works</h5>
             <h2 className="lined text-brand text-center pb-2">See Our Latest Works</h2>
             <div className="row justify-content-center pt-5">

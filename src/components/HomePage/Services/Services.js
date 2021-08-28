@@ -11,7 +11,7 @@ const Services = () => {
             })
     }, [])
     return (
-        <section id="services" className="container pt-5 pb-2 text-center">
+        <section id="services" className="container pt-4  text-center">
             <h5 className="text-primary text-uppercase pt-5">services</h5>
             <h2 className="lined text-brand text-center pb-2">Our Services</h2>
             <div className="row justify-content-center pt-5">
@@ -28,13 +28,12 @@ const Services = () => {
                                     <p className="mt-2 text-start">{service.description}</p>
                                 </div>
 
-                                <a href={`/admin/addBook/${service._id}`}><button className="btn-custom text-capitalize">get service</button></a>
+                                <a href={`/admin/addBook/${service._id}`}><button className="btn-custom mb-3 text-capitalize">get service</button></a>
                             </div>
                         </div>
                     ))
                 }
             </div>
-            <button className="btn-custom text-capitalize">See more</button><br /><br />
         </section >
     );
 };

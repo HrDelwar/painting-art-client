@@ -179,12 +179,6 @@ footer {
   from {
     transform: scale3d(1, 1, 1);
   }
-  10%, 20% {
-    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-  }
-  30%, 50%, 70%, 90% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
   40%, 60%, 80% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
@@ -194,17 +188,8 @@ footer {
 }
 
 @keyframes scale {
-  20% {
+  50% {
     transform: scale3d(1.2, 1.2, 1.2);
-  }
-  40% {
-    transform: scale3d(.8, .8, .8);
-  }
-  60% {
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
-  80% {
-    transform: scale3d(.9, .9, .9);
   }
   100% {
     transform: scale3d(1, 1, 1);

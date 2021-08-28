@@ -27,7 +27,7 @@ const blogs = [
 
 const Blogs = () => {
     return (
-        <section id="blogs" className="container pt-5 pb-2 text-center">
+        <section id="blogs" className="container pt-4  text-center">
             <h5 className="text-primary text-uppercase pt-5">Blogs</h5>
             <h2 className="lined text-brand text-center pb-2">Just Blogging</h2>
             <div className="row justify-content-center pt-5">
