@@ -12,7 +12,7 @@ const MakeAdmin = () => {
 
     const onSubmit = data => {
         const newData = { ...data, created: (new Date()).toString() }
-        const url = `https://arcane-beach-78410.herokuapp.com/addAdmin`;
+        const url = `https://arcane-beach-78410.herokuapp.com/admin/addAdmin`;
         fetch(url, {
             method: 'POST',
             headers: {

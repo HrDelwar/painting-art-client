@@ -11,7 +11,7 @@ const AddBook = () => {
     const { bookId } = useParams();
 
     useEffect(() => {
-        const url = `https://arcane-beach-78410.herokuapp.com/singleService/${bookId}`;
+        const url = `https://arcane-beach-78410.herokuapp.com/service/singleService/${bookId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setService(data))
@@ -22,7 +22,7 @@ const AddBook = () => {
 
     const handleOrderPlace = (paymentId) => {
         const orderInfo = { paymentId, service, user: loggedUser, status: 'pending' }
-        const url = `https://arcane-beach-78410.herokuapp.com/addOrder`;
+        const url = `https://arcane-beach-78410.herokuapp.com/order/addOrder`;
         fetch(url, {
             method: 'POST',
             headers: {

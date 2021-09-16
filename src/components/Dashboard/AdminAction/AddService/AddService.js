@@ -21,7 +21,7 @@ const AddService = ({ loggedUser }) => {
     const onSubmit = data => {
         const newData = { ...data };
         newData.photo = uploadedImage.display_url;
-        const url = `https://arcane-beach-78410.herokuapp.com/addService`;
+        const url = `https://arcane-beach-78410.herokuapp.com/service/addService`;
         const userEmail = loggedUser.email;
         fetch(url, {
             method: 'POST',

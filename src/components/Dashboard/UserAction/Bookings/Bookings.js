@@ -7,7 +7,7 @@ const Bookings = () => {
     const [loggedUser, setLoggedUser] = useContext(UserContext);
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        const url = `https://arcane-beach-78410.herokuapp.com/orders`;
+        const url = `https://arcane-beach-78410.herokuapp.com/order/orders`;
         const email = loggedUser.email;
         fetch(url, {
             method: 'GET',

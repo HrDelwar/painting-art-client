@@ -11,7 +11,7 @@ const AddReview = () => {
     const onSubmit = data => {
         const newData = { ...data, ...loggedUser, created: (new Date()).toString() }
 
-        const url = `https://arcane-beach-78410.herokuapp.com/addReview`;
+        const url = `https://arcane-beach-78410.herokuapp.com/review/addReview`;
         fetch(url, {
             method: 'POST',
             headers: {
